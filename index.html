@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Лабораторная работа</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>✨ Лабораторная работа по JavaScript</h1>
+        
+        <div class="card">
+            <h2>
+                <span>📐</span> Сумма двух чисел
+                <span class="badge">Калькулятор</span>
+            </h2>
+            <div class="input-group">
+                <input type="number" id="num1" placeholder="Введите первое число" value="12">
+                <input type="number" id="num2" placeholder="Введите второе число" value="30">
+                <button onclick="calculateSum()">
+                    <span>➕</span> Посчитать сумму
+                </button>
+            </div>
+            <div class="result-card" id="sumResult">
+                Результат: <span class="result-highlight">12 + 30 = 42</span>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>
+                <span>🔍</span> Проверка на простое число
+                <span class="badge">Анализ</span>
+            </h2>
+            <div class="input-group">
+                <input type="number" id="primeNum" placeholder="Введите число для проверки" value="17">
+                <button onclick="checkPrime()">
+                    <span>✓</span> Проверить
+                </button>
+            </div>
+            <div class="result-card" id="primeResult">
+                Результат: <span class="result-highlight">17 — простое число</span>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>
+                <span>🎲</span> Генератор случайного числа и его делителей
+                <span class="badge">1-10000</span>
+            </h2>
+            <div class="input-group">
+                <button onclick="generateDivisors()" style="flex: 1;">
+                    <span>🎲</span> Сгенерировать новое число
+                </button>
+            </div>
+            <div id="divisorsResult"></div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
