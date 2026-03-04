@@ -16,12 +16,15 @@
 ## 📁 Структура проекта
 
 📦 project
-├── 📄 index.html # Основной HTML файл
-├── 📁 css
-│ └── 🎨 style.css # Все стили проекта
-├── 📁 js
-│ └── ⚙️ main.js # Вся логика на JavaScript
-└── 📄 README.md
+┣ 📜 index.html
+┃
+┣ 📂 css
+┃ ┗ 📜 style.css
+┃
+┣ 📂 js
+┃ ┗ 📜 main.js
+┃
+┗ 📜 README.md
 
 ## 🎨 Особенности дизайна
 - Градиентный фон с анимацией
